@@ -1,0 +1,58 @@
+/* MENÚ */
+
+ul.menu {
+    text-align: center;
+    background: rgb(49, 48, 48);
+}
+
+ul.menu>li {
+    display: inline-block;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+ul.menu>li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+ul.menu>li a:hover {
+    color: rgb(0, 225, 255);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: rgb(49, 48, 48);
+    padding: 14px 0;
+}
+
+footer .footer_links ul {
+    padding: 0;
+}
+
+footer .footer_links ul li {
+    list-style: none;
+}
+
+footer .footer_links ul li a {
+    text-decoration: none;
+}
+
+footer .footer_links ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.copyright {
+    text-align: center;
+    background: #0f0;
+    color: #f3f;
+    padding: 6px;
+    font-size: 8px;
+}
+
+#totop {
+    display: none;
+}
