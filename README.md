@@ -1,2 +1,2 @@
 # proyectof
-Web on Jquery, Ajax,
+Web on Jquery and Ajax.
