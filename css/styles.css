@@ -21,6 +21,50 @@ ul.menu>li a:hover {
     color: rgb(0, 225, 255);
 }
 
+div.productos>ul>li>img {
+    height: 150px;
+    width: 150px;
+}
+
+
+/* BODY */
+
+h4 {
+    color: white;
+}
+
+#main>div {
+    font-size: 20px;
+}
+
+div.productos {
+    border: solid 2px black;
+}
+
+ul.cesta {
+    text-align: center;
+}
+
+ul.cesta>li {
+    display: inline-block;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+ul.cesta>li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.cesta>li a:hover {
+    color: #00f;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
 
 /* PIE DE PÁGINA */
 
