@@ -35,34 +35,19 @@ h4 {
 
 #main>div {
     font-size: 20px;
-}
-
-div.productos {
-    border: solid 2px black;
-}
-
-ul.cesta {
-    text-align: center;
-}
-
-ul.cesta>li {
-    display: inline-block;
-    margin: 0px 20px;
-    padding: 10px;
-}
-
-ul.cesta>li a {
-    text-decoration: none;
     color: black;
 }
 
-ul.cesta>li a:hover {
-    color: #00f;
+table.tabla>tbody>tr>td>img {
+    width: 150px;
 }
 
-ul {
-    list-style: none;
-    text-align: left;
+table.tabla>tbody>tr>td>span {
+    width: auto;
+}
+
+table.tabla {
+    text-align: center;
 }
 
 
