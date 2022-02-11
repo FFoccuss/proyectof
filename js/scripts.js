@@ -1,23 +1,38 @@
-$(document).ready(function() {
+function carrito(row_no) {
+    row_no = $('table tbody .producto').length;
+    document.querySelector('#shopping-cart span').innerHTML = row_no;
+}
 
-    function precio(){
-        var preciototal = 0.00;
-        var preciodatos = "";
-        var preciocontasion = "";
-      
-        $(".product").each(function(){
-          preciodatos = parseFloat($(this).find(".tp-sel > option:selected").data("price")) || 0;
-          preciocontasion = parseFloat($(this).find(".tp-sel-count > option:selected").data("count")) || 0;
-          console.log("Price: " + preciodatos + "Count:" +preciocontasion);
-          preciototal += preciodatos * preciodatos;
-        })
-        $("#price").html(preciototal.toFixed(2));
-      }
-      
-      
-      $("#countprice").click(function(){
-        precio();
-      });
+function dinero(precio) { /*Muestra el precio final x pantalla*/
+    document.querySelector('.totalpedido tbody tr td .preciofinal').innerHTML = precio.toFixed(2) + "&euro;";
+}
+
+function precio(precio) {
+    $(".tabla>tbody> .producto>.precioproducto span").each(function() {
+        precio += parseFloat($(this).text());
+        dinero(precio);
+    })
+}
+
+$(document).ready(function() {
+    carrito();
+    var precio = 0;
+    /*precio(precio);
+    dinero(precio);*/
+    document.querySelector('.totalpedido tbody tr td .preciofinal').innerHTML = precio.toFixed(2) + "&euro;";
+
+
+    $("#quitar").on("click", function() {
+        $(".tabla > tbody:first-child").remove();
+
+        precio(precio);
+    });
+    $(".tabla>tbody>.producto>#quitar1").on("click", function() {
+        $(".tabla > tbody:last-child").remove();
+
+        precio(precio);
+    });
+
 
 
 });

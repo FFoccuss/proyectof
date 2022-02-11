@@ -100,21 +100,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td scope="row"><i class="fas fa-times-circle"></td>
+                        <tr class="producto">
+                            <td scope="row"><i id="quitar" class="fas fa-times-circle"></td>
                             <td><img src="img/codex.png" title="codex" /></td>
                             <td>1</td>
-                            <td>30€</td>
+                            <td><del>55 &euro; </del><br>30 &euro;</td>
                             <td>1</td>
-                            <td>30€</td>
+                            <td class="precioproducto" ><span>30&euro;</span></td>
                         </tr>
-                        <tr>
-                            <th scope="row"><i class="fas fa-times-circle"></th>
+                        <tr class="producto">
+                            <th scope="row"><i id="quitar1" class="fas fa-times-circle"></th>
                             <td><img src="img/guardas.png" title="guardas" /></td>
                             <td>1</td>
                             <td>39€</td>
                             <td>1</td>
-                            <td>39€</td>
+                            <td class="precioproducto">39€</td>
                         </tr>
                 </table>
 
@@ -125,11 +125,11 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <h3>Total del Carrito</h3>
-                    <table class="table table-light table-striped">
+                    <table class="table table-light table-striped totalpedido">
                     <tbody>
                         <tr>
                             <td>Subtotal</td>
-                            <td>30€</td>
+                            <td><span id="subtotal"></span></td>
                         </tr>
                         <tr>
                             <td>Precio de envio</td>
@@ -137,7 +137,7 @@
                         </tr>
                         <tr>
                             <td>Total incluido impuestos</td>
-                            <td>30€</td>
+                            <td><span id="preciofinal"></span></td>
                         </tr>
                     </tbody>
                     </table>
