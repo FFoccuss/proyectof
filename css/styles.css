@@ -52,7 +52,10 @@ table.tabla {
 
 
 /* PIE DE PÁGINA */
+footer a{
+   color: white;
 
+}
 footer {
     background: rgb(49, 48, 48);
     padding: 14px 0;
@@ -76,12 +79,25 @@ footer .footer_links ul li a:hover {
 
 .copyright {
     text-align: center;
-    background: #0f0;
-    color: #f3f;
+    background: rgba(0, 0, 0, 0.534);
     padding: 6px;
     font-size: 8px;
 }
 
-#totop {
-    display: none;
+@media(max-width: 768px){
+	/* CABECERA */
+	header .contacto > div > span{display: none;}
+	header .contacto{order: 1;}
+	header .user-utils{order: 2;}
+	header #logo{order: 3;}
+	
+	/* MENÚ */
+	ul.menu > li{margin: 0px; padding: 5px;}
+	ul.menu > li a{font-size: 14px;}
+	
+	/* CUERPO DE LA PÁGINA */
+	#main > div{font-size: 18px;}
+	
+	/* PIE DE PÁGINA */
+	footer .footer_links h4, footer .footer_links ul{text-align: center;}
 }
