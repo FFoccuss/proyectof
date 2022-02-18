@@ -84,3 +84,20 @@ footer .footer_links ul li a:hover {
     font-size: 8px;
 }
 
+@media(max-width: 768px){
+	/* CABECERA */
+	header .contacto > div > span{display: none;}
+	header .contacto{order: 1;}
+	header .user-utils{order: 2;}
+	header #logo{order: 3;}
+	
+	/* MENÚ */
+	ul.menu > li{margin: 0px; padding: 5px;}
+	ul.menu > li a{font-size: 14px;}
+	
+	/* CUERPO DE LA PÁGINA */
+	#main > div{font-size: 18px;}
+	
+	/* PIE DE PÁGINA */
+	footer .footer_links h4, footer .footer_links ul{text-align: center;}
+}
