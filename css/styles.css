@@ -52,7 +52,10 @@ table.tabla {
 
 
 /* PIE DE PÁGINA */
+footer a{
+   color: white;
 
+}
 footer {
     background: rgb(49, 48, 48);
     padding: 14px 0;
@@ -76,12 +79,8 @@ footer .footer_links ul li a:hover {
 
 .copyright {
     text-align: center;
-    background: #0f0;
-    color: #f3f;
+    background: rgba(0, 0, 0, 0.534);
     padding: 6px;
     font-size: 8px;
 }
 
-#totop {
-    display: none;
-}
